@@ -1,9 +1,9 @@
 # Code Smells
 Examples of Code smells and Clean code
 
-I am making a curated list of common code smells and their respective clean code in Swift and Kotlin programming languages.
+I am making a curated list of common code smells and their respective clean code in Swift programming language.
 
-Before jumping into the code smelss, here is an overview of common code smells:
+Before jumping into the code smells, here is an overview of common code smells:
 - Duplicate Code
 - Long Method
 - Long Parameter List
