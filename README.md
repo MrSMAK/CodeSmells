@@ -4,33 +4,52 @@ Examples of Code smells and Clean code
 I am making a curated list of common code smells and their respective clean code in Swift programming language.
 
 Before jumping into the code smells, here is an overview of common code smells:
-- Duplicate Code
+
+- Bloaters
+A Bloater smell represents a code element that has grown so large that it cannot be effectively handled.
+- Large Class
 - Long Method
 - Long Parameter List
+- Primitive Obsession
+
+- Object-Orientation Abusers
+An Object-Orientation Abuser smell occurs when code does not take full advantage of object-oriented design.
+	- Alternative Classes with Different Interfaces
+	- Refused Bequest
+	- Switch Statements
+	- Temporary Field
+
+- Change Preventers
+Change Preventer smells inhibit future development and modification of code.
+	- Divergent Change
+	- Parallel Inheritance Hierarchies
+- Shotgun Surgery
+
+-Dispensables
+Dispensable smells are unnecessary code that causes clutter in your codebase.
+- Data Class
+- Duplicate Code
+- Lazy Class
+- Speculative Generality
+- Dead Code
+
+-Couplers
+A Coupler smell represents high degrees of dependency between different parts of the codebase.
+- Inappropriate Intimacy
+- Feature Envy
+- Message Chains
+- Middle Man
+
+
+- Other Code Smells
+- Large Method
 - Uncommunicative Name
 - Type Embedded in Name
 - Magic Numbers
 - Inconsistent Names
-- Data Class
-- Switch Statements
-- Temporary Field
-- Refused Bequest
-- Alternative Classes with Different Interfaces
-- Divergent Change
-- Shotgun Surgery
-- Parallel Inheritance Hierarchies
-- Lazy Class
-- Speculative Generality
-- Message Chains
-- Middle Man
-- Inappropriate Intimacy
-- Feature Envy
-- Primitive Obsession
 - Excessive Use of Literals
 - Cyclomatic Complexity
 - Cognitive Complexity
-- Large Class
-- Large Method
 - Spaghetti Code
 - God Object
 - Comments
@@ -1574,3 +1593,30 @@ However, In this cleaner version, responsibilities are separated into distinct c
 - Comment Your Code: Good comments should explain the "why," not the "what." They are especially useful when the code is complex or when working with others. Comments should provide insights into the rationale behind the code, its purpose, or any important considerations.
 - Use Meaningful Comments: Comments should add value by providing information that is not immediately obvious from the code itself. They should help to clarify the intent of the code or explain any non-trivial implementation details.
 - Avoid Redundant Comments: Redundant comments, such as those that simply restate the code in natural language, should be avoided as they can clutter the codebase and reduce its readability.
+
+### Example of Dead Code
+#### Smelly Code
+```
+func calculateSum(numbers: [Int]) -> Int {
+    var sum = 0
+    for number in numbers {
+        sum += number
+    }
+    return sum
+    print("This line of code is never executed")
+}
+```
+
+#### Clean Code
+```
+func calculateSum(numbers: [Int]) -> Int {
+    var sum = 0
+    for number in numbers {
+        sum += number
+    }
+    return sum
+}
+```
+In the smelly code, the print statement at the end of the calculateSum function is never executed, leading to dead code. In the clean code, the dead code is removed, leading to a simpler and more maintainable design.
+
+![Uploading image.png…]()
