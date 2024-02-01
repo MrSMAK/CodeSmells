@@ -1662,5 +1662,3 @@ However, In this cleaner version, responsibilities are separated into distinct c
 - Comment Your Code: Good comments should explain the "why," not the "what." They are especially useful when the code is complex or when working with others. Comments should provide insights into the rationale behind the code, its purpose, or any important considerations.
 - Use Meaningful Comments: Comments should add value by providing information that is not immediately obvious from the code itself. They should help to clarify the intent of the code or explain any non-trivial implementation details.
 - Avoid Redundant Comments: Redundant comments, such as those that simply restate the code in natural language, should be avoided as they can clutter the codebase and reduce its readability.
-
-![image](https://github.com/MrSMAK/CodeSmells/assets/3213068/bbc80e12-d1c0-4e59-ad79-c6ca54cda693)
