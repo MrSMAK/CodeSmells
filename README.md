@@ -5,54 +5,48 @@ I am making a curated list of common code smells and their respective clean code
 
 Before jumping into the code smells, here is an overview of common code smells:
 
-- Bloaters
-A Bloater smell represents a code element that has grown so large that it cannot be effectively handled.
-- Large Class
-- Long Method
-- Long Parameter List
-- Primitive Obsession
+- Bloaters: A Bloater smell represents a code element that has grown so large that it cannot be effectively handled.
+	- Large Class
+	- Long Method
+	- Long Parameter List
+	- Primitive Obsession
 
-- Object-Orientation Abusers
-An Object-Orientation Abuser smell occurs when code does not take full advantage of object-oriented design.
+- Object-Orientation Abuser: An Object-Orientation Abuser smell occurs when code does not take full advantage of object-oriented design.
 	- Alternative Classes with Different Interfaces
 	- Refused Bequest
 	- Switch Statements
 	- Temporary Field
 
-- Change Preventers
-Change Preventer smells inhibit future development and modification of code.
+- Change Preventers: Change Preventer smells inhibit future development and modification of code.
 	- Divergent Change
 	- Parallel Inheritance Hierarchies
-- Shotgun Surgery
+	- Shotgun Surgery
 
--Dispensables
-Dispensable smells are unnecessary code that causes clutter in your codebase.
-- Data Class
-- Duplicate Code
-- Lazy Class
-- Speculative Generality
-- Dead Code
+- Dispensables: Dispensable smells are unnecessary code that causes clutter in your codebase.
+	- Data Class
+	- Duplicate Code
+	- Lazy Class
+	- Speculative Generality
+	- Dead Code
 
--Couplers
-A Coupler smell represents high degrees of dependency between different parts of the codebase.
-- Inappropriate Intimacy
-- Feature Envy
-- Message Chains
-- Middle Man
-
+- Couplers: A Coupler smell represents high degrees of dependency between different parts of the codebase.
+	- Inappropriate Intimacy
+	- Feature Envy
+	- Message Chains
+	- Middle Man
 
 - Other Code Smells
-- Large Method
-- Uncommunicative Name
-- Type Embedded in Name
-- Magic Numbers
-- Inconsistent Names
-- Excessive Use of Literals
-- Cyclomatic Complexity
-- Cognitive Complexity
-- Spaghetti Code
-- God Object
-- Comments
+	- Large Method
+	- Uncommunicative Name
+	- Type Embedded in Name
+	- Magic Numbers
+	- Inconsistent Names
+	- Excessive Use of Literals
+	- Cyclomatic Complexity
+	- Cognitive Complexity
+	- Spaghetti Code
+	- God Object
+	- Comments
 
 The types of code smells can vary, but they generally include characteristics in the source code that may indicate a deeper problem. Also an important thing to note here is that these code smells are not necessarily bugs, but they can indicate weaknesses in design, slow down development, or increase the risk of bugs or failures. Identifying and addressing code smells is an important aspect of maintaining code quality and preventing technical debt.
 
