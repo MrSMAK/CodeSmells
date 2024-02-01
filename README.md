@@ -5,7 +5,7 @@ I am making a curated list of common code smells and their respective clean code
 
 Before jumping into the code smells, here is an overview of common code smells:
 - Duplicate Code
--- Long Method
+- Long Method
 - Long Parameter List
 - Uncommunicative Name
 - Type Embedded in Name
